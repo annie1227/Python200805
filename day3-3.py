@@ -30,10 +30,20 @@ def high(aamount,sscore,nname):
         if sscore[k]>highest:
             highest= sscore[k]
             highest_name= nname[k]
+    
     return highest,highest_name
-print("最高分是: " high(amount,s,n))
+print("最高分是: " ,high(amount,s,n))
 
-
+def low(aa,ss,nn):
+    lowest=99999999
+    lowest_name=''
+    for j in range (aa):
+        if ss[j]<lowest:
+            lowest=ss[j]
+            lowest_name=nn[j]
+            
+    return lowest,lowest_name
+print("最低分是: " ,low(amount,s,n))
 
 
 
